@@ -52,9 +52,9 @@ export default class Header extends Component {
   render() {
     return (
     <header>
+      <img src="https://via.placeholder.com/150" alt=""/>
       <div className="name">Ethan Roberts</div>
       <div className="title" ref="title"></div>
-      <img src="https://via.placeholder.com/150" alt=""/>
       <Links />
     </header>
     )
