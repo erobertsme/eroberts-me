@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Links from './Links'
 import { FaHatWizard } from 'react-icons'
+import Me from '../../images/me.png'
 
 export default class Header extends Component {
 
@@ -52,7 +53,7 @@ export default class Header extends Component {
   render() {
     return (
     <header>
-      <img src="https://via.placeholder.com/150" alt=""/>
+      <img src={Me} alt=""/>
       <div className="name">Ethan Roberts</div>
       <div className="title" ref="title"></div>
       <Links />
