@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Links from './Links'
-import { FaHatWizard } from 'react-icons'
 import Me from '../../images/me.png'
 
 export default class Header extends Component {
