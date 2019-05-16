@@ -8,8 +8,8 @@ export default class Header extends Component {
   constructor(props) {
     super(props)
     this.titles = [
-      "🧙‍💻 Technomancer 💻🧙‍‍‍‍‍",
-      "⚡️☠️ Dev or Die ☠️⚡️"
+      "Technomancer",
+      "Full-stack web developer"
     ]
     this.state = {
       currentIndex: 0
