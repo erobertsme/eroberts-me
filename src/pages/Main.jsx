@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../styles/main.scss'
 import Header from '../components/header/Header'
 import Intro from '../components/bio/Intro'
 import Portfolio from '../components/portfolio/Portfolio'

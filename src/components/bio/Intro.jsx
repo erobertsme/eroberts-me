@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../styles/intro.scss'
 
 export default function Intro() {
   return (
