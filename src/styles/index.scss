@@ -57,6 +57,9 @@ header {
   }
   .title {
     font-size: 16pt;
+    &:hover {
+      cursor: pointer;
+    }
   }
   img {
     display: block;

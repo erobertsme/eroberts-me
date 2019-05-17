@@ -8,8 +8,8 @@ export default class Header extends Component {
   constructor(props) {
     super(props)
     this.titles = [
-      "Technomancer",
-      "Full-stack web developer"
+      "Full-stack Web Developer",
+      "Technomancer"
     ]
     this.state = {
       currentIndex: 0
@@ -17,18 +17,6 @@ export default class Header extends Component {
   }
 
   componentDidMount = () => {
-    this.timerID = setInterval(
-      () => this.tick(),
-      20000
-    );
-    this.setTitle()
-  }
-
-  componentWillUnmount = () => {
-    clearInterval(this.timerID);
-  }
-
-  tick = () => {
     this.setTitle()
   }
 
@@ -38,7 +26,7 @@ export default class Header extends Component {
     if (this.state.currentIndex === this.titles.length - 1) {
       this.setState({ currentIndex:  0 })
     } else {
-      this.setState((prevState, props) => { return { currentIndex:  prevState.currentIndex + 1 } })
+      this.setState((prevState) => { return { currentIndex:  prevState.currentIndex + 1 } })
     }
 
     return nextTitle
@@ -54,7 +42,7 @@ export default class Header extends Component {
     <header>
       <img src={Me} alt=""/>
       <div className="name">Ethan Roberts</div>
-      <div className="title" ref="title"></div>
+      <div className="title" ref="title" onClick={this.setTitle}></div>
       <Links />
     </header>
     )
