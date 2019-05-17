@@ -58,10 +58,18 @@ header {
   text-align: center;
   margin: 20px;
   align-items: center;
-  .name {
+  img {
+    display: block;
+    align-self: center;
+    border-radius: 50%;
+    border: 6px solid $color1;
     margin: 5px;
+    max-width: 240px;
+  }
+  .name {
+    margin: 10px;
     font-size: 3em;
-    font-weight: 500;
+    font-weight: 700;
   }
   .title {
     color: $color0;
@@ -71,20 +79,12 @@ header {
       cursor: pointer;
     }
   }
-  img {
-    display: block;
-    align-self: center;
-    border-radius: 50%;
-    border: 6px solid $color1;
-    margin: 15px;
-    max-width: 240px;
-  }
 }
 
 .links {
   font-size: 2em;
   justify-content: center;
-  margin: 15px;
+  margin: 20px;
   svg {
     margin: 0 10px;
   }
