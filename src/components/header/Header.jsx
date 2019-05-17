@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Links from './Links'
 import Me from '../../images/me.png'
+// import { FaChevronDown } from 'react-icons/fa'
 
 export default class Header extends Component {
 
@@ -44,6 +45,7 @@ export default class Header extends Component {
       <div className="name">Ethan Roberts</div>
       <div className="title" ref="title" onClick={this.setTitle}></div>
       <Links />
+      {/* <FaChevronDown className="chevron-down" /> */}
     </header>
     )
   }

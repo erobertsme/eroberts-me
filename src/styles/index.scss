@@ -1,4 +1,16 @@
+/* Coolors Exported Palette - coolors.co/d9f0ff-a3d5ff-83c9f4-6f73d2-7681b3 */
+
+/* RGB */
+$color0: rgba(51, 51, 51, 1);
+$color1: rgba(217, 240, 255, 1);
+$color2: rgba(163, 213, 255, 1);
+$color3: rgba(85, 214, 190, 1);
+$color4: rgba(111, 115, 210, 1);
+$color5: rgba(118, 129, 179, 1);
+
+
 body {
+  color: $color0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -12,21 +24,18 @@ code {
     monospace;
 }
 
-$blue: #C5EFF7;
-$darker: #333D3F;
-
 a {
-  color: $darker;
+  color: $color0;
   &:visited {
-    color: $darker;
+    color: $color0;
   }
   &:hover {
-    color: #4B88A2;
+    color: $color4;
   }
 }
 
 main {
-  background-color: $blue;
+  background-color: $color2;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -50,13 +59,14 @@ header {
   margin: 20px;
   align-items: center;
   .name {
-    color: $darker;
     margin: 5px;
     font-size: 3em;
     font-weight: 500;
   }
   .title {
+    color: $color0;
     font-size: 16pt;
+    font-weight: 500;
     &:hover {
       cursor: pointer;
     }
@@ -66,7 +76,7 @@ header {
     align-self: center;
     border-radius: 50%;
     margin: 15px;
-    max-width: 150px;
+    max-width: 240px;
   }
 }
 
@@ -77,4 +87,9 @@ header {
   svg {
     margin: 0 10px;
   }
+}
+
+.chevron-down {
+  margin: 50px 0 0 0;
+  font-size: 2em;
 }
