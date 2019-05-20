@@ -26,6 +26,7 @@ code {
 
 a {
   color: $color0;
+  transition: color 200ms;
   &:visited {
     color: $color0;
   }
@@ -75,6 +76,7 @@ header {
     color: $color0;
     font-size: 16pt;
     font-weight: 500;
+    transition: color 200ms;
     &:hover {
       cursor: pointer;
       color: $color4;
