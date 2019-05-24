@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Main from './pages/Main'
 import Bio from './pages/Bio'
 import Tips from './pages/Tips'
+import Crypto from './pages/Crypto'
 import NotFound from './pages/NotFound'
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
       <Route exact path="/" component={Main} />
       <Route exact path="/bio" component={Bio} />
       <Route exact path="/tips-and-tricks" component={Tips} />
+      <Route exact path="/crypto" component={Crypto} />
       <Route component={NotFound} />
     </Switch>
   </Router>,
