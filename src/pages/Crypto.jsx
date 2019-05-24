@@ -50,7 +50,7 @@ export default class Main extends Component {
       <main>
         <h1>Crypto</h1>
         <form>
-          <label id="secret-label" htmlFor="secret">secret</label>
+          <label id="secret-label" htmlFor="secret">Secret</label>
           <input name="secret" type="text" value={this.state.passwsord} onChange={this.handleChange} />
 
           <label id="input-label" htmlFor="input">Input</label>
