@@ -39,6 +39,10 @@ export default class Main extends Component {
     
   }
 
+  handleClick = (ev) => {
+    ev.target.select()
+  }
+
   render() {
     return (
       <main>
@@ -51,7 +55,7 @@ export default class Main extends Component {
           <textarea id="input" name="input" cols="60" rows="20" onChange={this.handleChange} value={this.state.input}></textarea>
 
           <label id="output-label" htmlFor="ouput">Output</label>
-          <textarea id="output" name="output" cols="60" rows="20" onChange={this.handleChange} value={this.state.output}></textarea>
+          <textarea id="output" name="output" cols="60" rows="20" onChange={this.handleChange} onClick={this.handleClick} value={this.state.output}></textarea>
         </form>
       </main>
     )
