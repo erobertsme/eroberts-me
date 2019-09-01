@@ -10,22 +10,17 @@ export default class Main extends Component {
     output: ""
   }
 
-  checkSecretLength = () => {
-    if (this.state.secret.length >= 8) {
-      return true
-    } else {
-      return false
-    }
-  }
-
   handleChange = (ev) => {
     switch (ev.target.name) {
       case "secret":
-        this.setState({secret: ev.target.value})
+        let reEncrypted = encrypt(this.state.input, ev.target.value)
+        this.setState({
+          secret: ev.target.value,
+          output: reEncrypted
+        })
         break;
       case "input":
         let encrypted = encrypt(ev.target.value, this.state.secret)
-        console.log(encrypted)
         this.setState({
           input: ev.target.value,
           output: encrypted
@@ -33,7 +28,6 @@ export default class Main extends Component {
         break;
       case "output":
         let decrypted = decrypt(ev.target.value, this.state.secret)
-        console.log(decrypted)
         this.setState({
           input: decrypted,
           output: ev.target.value
@@ -51,7 +45,7 @@ export default class Main extends Component {
         <h1>Crypto</h1>
         <form>
           <label id="secret-label" htmlFor="secret">Secret</label>
-          <input name="secret" type="text" value={this.state.passwsord} onChange={this.handleChange} />
+          <input name="secret" type="text" value={this.state.secret} onChange={this.handleChange} />
 
           <label id="input-label" htmlFor="input">Input</label>
           <textarea id="input" name="input" cols="60" rows="20" onChange={this.handleChange} value={this.state.input}></textarea>
