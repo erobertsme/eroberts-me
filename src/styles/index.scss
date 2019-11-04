@@ -1,12 +1,11 @@
 /* Coolors Exported Palette - coolors.co/d9f0ff-a3d5ff-83c9f4-6f73d2-7681b3 */
 
 /* RGB */
-$color0: rgba(51, 51, 51, 1);
-$color1: rgba(217, 240, 255, 1);
-$color2: rgba(163, 213, 255, 1);
-$color3: rgba(85, 214, 190, 1);
-$color4: rgba(111, 115, 210, 1);
-$color5: rgba(118, 129, 179, 1);
+$color0: rgba(42, 45, 52, 1);
+$color1: rgba(102, 153, 204, 1);
+$color2: rgba(153, 204, 232, 1);
+$color3: rgba(76, 96, 133, 1);
+$color4: rgb(125, 78, 87);
 
 
 body {
@@ -36,7 +35,7 @@ a {
 }
 
 main {
-  background-color: $color2;
+  background-color: $color1;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -63,7 +62,7 @@ header {
     display: block;
     align-self: center;
     border-radius: 50%;
-    border: 6px solid $color1;
+    border: 6px solid $color2;
     margin: 5px;
     max-width: 240px;
   }
@@ -90,6 +89,10 @@ header {
   margin: 20px;
   svg {
     margin: 0 10px;
+    color: $color0;
+  }
+  svg:hover {
+    color: $color4;
   }
 }
 
