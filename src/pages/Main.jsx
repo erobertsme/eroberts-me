@@ -6,7 +6,8 @@ import blue from '../images/background.png'
 // import Portfolio from '../components/portfolio/Portfolio'
 
 let mainStyle = {
-  backgroundImage: 'url('+blue+')'
+  backgroundImage: 'url('+blue+')',
+  backgroundSize: 'cover'
 };
 
 export default class Main extends Component {
