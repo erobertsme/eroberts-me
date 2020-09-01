@@ -17,7 +17,7 @@ export default class Portfolio extends Component {
   render() {
     return (
       <section className="portfolio">
-        <h3>Here's some (maybe) fun projects you can click on</h3>
+        <h3>Here are some <span>fun</span> projects you can click on</h3>
         <div className="project-container">{ this.mapProjects() }</div>
       </section>
     )

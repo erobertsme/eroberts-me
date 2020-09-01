@@ -190,3 +190,9 @@ input {
   margin: 50px 0 0 0;
   font-size: 2em;
 }
+
+@media (max-width: 1024px) {
+  .portfolio {
+    display: none;
+  }
+}
