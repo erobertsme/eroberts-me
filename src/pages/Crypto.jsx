@@ -57,6 +57,7 @@ export default class Main extends Component {
           <label id="output-label" htmlFor="ouput">Output</label>
           <textarea id="output" name="output" cols="60" rows="20" onChange={this.handleChange} onClick={this.handleClick} value={this.state.output}></textarea>
         </form>
+        <h2><a href="/">Back</a></h2>
       </main>
     )
   }

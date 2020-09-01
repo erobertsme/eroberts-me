@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Project() {
+export default function Project(props) {
+
   return (
-    <div>
-      Project
-    </div>
+    <a className="project" href={props.data.url} target={ props.data.url ===  "/crypto" ? 'window' : '_blank' }>
+      {props.data.title}
+    </a>
   )
 }
