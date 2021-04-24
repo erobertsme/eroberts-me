@@ -5,7 +5,7 @@ export default class Portfolio extends Component {
 
   projects = [
     { 'title': "Harry Potter themed game", "url": 'https://notharrypotter.herokuapp.com/' },
-    { 'title': "ToRA95", "url": 'https://tora95.com' },
+    { 'title': "ToRA95", "url": 'https://tora95.netlify.app' },
     { 'title': "Pixemoji", "url": 'https://pixemoji.netlify.app' },
     { 'title': "Encrypt a Message", "url": '/crypto' }
   ]
