@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/crypto.scss'
 
-import { encrypt, decrypt } from '../utils/crypt.js'
+import { encrypt, decrypt } from '../utils/crypto.js'
 
 export default class Main extends Component {
   state = {
